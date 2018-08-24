@@ -14,4 +14,4 @@ sed "s/{project}/${image}/g" serve.tpl > serve.sh
 sed "s/{project}/${image}/g" mysql.tpl > mysql.sh
 
 echo "Add the folowing line to your host file: /etc/host"
-echo "127.0.0.1 www.${image}.com"
+echo "127.0.0.1\twww.${image}.com"
